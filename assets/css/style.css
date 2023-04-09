@@ -1,0 +1,512 @@
+
+@media screen and (max-width:768px) {
+   
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  header{
+    height: 156px;
+    width: 100%;
+    align-items: center;
+    padding-top: 100px;
+  }
+   .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text{
+        background-image: url(./images/Rectangle\ 1.png);
+        background-repeat: no-repeat;
+        background-position:0px -4px;
+        height: 50px;
+    }
+    .text p{
+            margin-left: 20px;
+            font-family: 'Inter';
+            font-size: 18px;
+           
+        }
+        .text span:not(:last-child) {
+            margin-left: 20px;
+        }
+    .name{
+        font-weight: 900;
+        
+     }
+ 
+    .user{
+            padding-right: 50px;
+        }
+        .user img{
+            width: 57px;
+            height: 57px;
+        }
+    .hamb{
+    
+        position: absolute;
+        right: 90px;
+        top: 121px;
+ }
+
+
+    #rotated{
+        transition-duration: 0.4s;
+        filter: none;
+
+    }
+    #rotated img{
+            width: 20px;
+            height: 20px;
+            margin-bottom: 4px;
+            filter: none;
+         }
+
+    .mobile-menu{
+                position: absolute;
+                top: 160px;
+                right: 0;
+                z-index: 1500;
+                width: 0;
+                height: 770px;
+                background: #E109A5;
+                border-radius: 20px 0px 0px 20px;
+                transition: 0.2s; 
+                transition-duration: 0.4s;
+            }
+
+    .dropdown{
+        margin-top: 40px;
+
+              
+     }
+
+     .dropdown li{
+            text-align:center;
+            margin: 20px 0px 0px 80px;
+            font-size: 23px;
+            color: #FFFFFF;
+            font-family: Inter;
+            font-weight: 500;
+            line-height: 29px;              
+       }
+    .nameI{
+        margin-top: 70px !important;
+        font-size: 14px;
+       }
+
+    .active{
+        display: block;
+        transition: all 0.2s;
+        transition-duration: 0.4s;
+        width: 60%;
+    }
+    
+  
+    .flowers{
+        margin-top: 20px;
+        width: 100%;
+        height: 96px;  
+    }
+        .flowers img{
+            width: 100%;
+        }
+    
+    .form{
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+    }
+        .form label{
+            font-family: 'Inter';
+            font-size: 20px;
+          
+        }
+        .form input{
+            width: 100%;
+            height: 60px;
+            background: #EDEDED;
+            border-radius: 9px;
+            border: none;
+            margin-bottom: 45px;
+        }
+        form input:focus{
+            outline-color:	rgb(30,144,255)
+        }
+        input:last-of-type{
+            margin-bottom: 8px;
+        }
+        button{
+            width: 60%;
+            height: 69px;
+            background: #E109A5;
+            border-radius: 9px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            margin-bottom: 5px;
+        }
+    /* footer */ 
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: #E109A5;
+        position: relative;
+    }
+    footer::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        border-top: 80px solid white;
+        border-left: 1000px solid  #E109A5;
+        width: 0;
+    }
+    .top-text{
+            font-weight: 700;
+            font-size: 70px;
+            color:#fff;
+            font-family: 'Sweet Buttermilk Free', sans-serif;
+            padding-top: 80px;
+        }
+    .middle-text p{
+            font-family: 'Inter';
+            font-size: 22px;
+            font-family: Inter;
+            line-height: 22px;
+            text-align: left;
+            color:#fff;
+            font-family: Inter;
+            margin-top: 35px;
+            letter-spacing: 1px;
+     }
+     .bottom-text{
+        margin-top: 45px;
+     }
+    .bottom-text p {
+            font-family: 'Inter';
+            font-size: 25px;
+            font-family: Inter;
+            font-weight: 900;
+            line-height: 22px;
+            text-align: left;
+            color:#fff;
+            padding-top: 35px;
+          
+     }
+     .bottom-text span {
+            font-family: 'Inter';
+            font-size: 18px;
+            font-family: Inter;
+            font-weight: 900;
+            line-height: 22px;
+            text-align: left;
+            color:#fff;
+        }
+
+   .bottom-text p:last-of-type{
+           padding-bottom: 25px;
+           
+        }
+        .day{
+            font-size: 22px;
+            font-weight: 900;
+            font-family: 'Inter';
+            line-height: 22px;
+         
+        }
+        .lilia{
+            position: absolute;
+            bottom:63px;
+            right: 45px;
+        }
+
+/* blur */
+
+      .no_blur{
+        transition: all 0.2s;
+      }
+        .blur{
+            filter: blur(2px);
+            transition: all 0.3s;
+       }
+    }
+
+
+ @media screen and (max-width:600px) {
+     
+     
+    .lilia{
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    
+    .top-text{
+            font-weight: 500;
+            font-size: 60px;
+            color:#fff;
+            font-family: 'Sweet Buttermilk Free', sans-serif;
+            padding-top: 80px;
+        }
+    .middle-text p{
+       
+            font-size: 22px;
+            line-height: 23px;
+            text-align: left;
+     }
+     .bottom-text{
+        margin-top: 35px;
+     }
+     .hamb{
+    
+        position: absolute;
+        right: 60px;
+        top: 121px;
+ }
+    .bottom-text p {
+
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 22px;
+            padding-top: 25px;
+          
+     }
+     .bottom-text span {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            color:#fff;
+        }
+
+   .bottom-text p:last-of-type{
+           padding-bottom: 40px;
+           
+        }
+        .day{
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 18px;
+         
+        }
+} 
+
+@media screen and (max-width:530px){
+    .middle-text p{
+        font-size: 22px;
+        line-height: 22px;
+        text-align: left;
+        color:#fff;
+        margin-top: 10px;
+        letter-spacing: 1px;
+ }
+}
+
+  @media screen and (max-width:412px) {
+    .text p{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .text span{
+        font-size: 14px;
+    }
+    .text span:not(:last-child) {
+        margin-left: 10px;
+    }
+    .name{
+        font-weight: 600;
+     }
+    
+    .form{
+        margin-top: 25px;
+    }
+    .form input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .form label{
+        font-size: 14px;
+    }
+
+    button{
+        width: 60%;
+        height: 49px;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 1px;
+    }
+
+    .flowers{
+        margin-top: 10px;
+        width: 100%;
+        height: 66px;  
+    }
+    footer{
+        height: 682px;
+    }
+    footer p{
+            margin-top: 2px;
+        }
+    footer p:last-of-type{
+        padding-bottom: 1px;
+            
+     }
+    .lilia{
+        position: absolute;
+        bottom:15px;
+        right: 15px;
+    }
+
+    .hamb{
+    
+        position: absolute;
+        right: 40px;
+        top: 121px;
+ }
+
+ .dropdown li{
+    text-align:center;
+    margin: 20px 0px 0px 30px;
+    font-size: 18px;
+}
+    .top-text{
+            font-weight: 200;
+            font-size: 50px;
+            color:#fff;
+            font-family: 'Sweet Buttermilk Free', sans-serif;
+            padding-top: 78px;
+        }
+    .middle-text p{
+       
+            font-size: 16px;
+            line-height: 16px;
+            text-align: left;
+            color:#fff;
+            margin-top: 20px;
+            letter-spacing: 1px;
+     }
+     .bottom-text{
+        margin-top: 5px;
+     }
+    .bottom-text p {
+
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 19px;
+            padding-top: 20px;
+          
+     }
+     .bottom-text span {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+            color:#fff;
+        }
+
+   .bottom-text p:last-of-type{
+           padding-bottom: 1px;
+           
+        }
+        .day{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+         
+        }
+
+}  
+
+
+@media screen and (max-width:333px) {
+ 
+    .text p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .text span{
+        font-size: 12px;
+    }
+    .text span:not(:last-child) {
+        margin-left: 5px;
+    }
+   
+    .user{
+        padding-right: 30px;
+    }
+    .user img{
+        width: 57px;
+        height: 57px;
+    }
+    .hamb{
+        right: 33px;
+        top: 118px;
+ }
+
+    .middle-text p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .bottom-text p {
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 16px;
+        padding-top: 17px;
+      
+ }
+ .bottom-text span {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 16px;
+        
+    }
+
+    .lilia{
+        position: absolute;
+        bottom: 13px;
+        right: 2px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+
+    .name{
+        font-weight: 600;
+     }
+}
+@media screen and (max-width:298px) {
+    .text p{
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .text span{
+        font-size: 11px;
+    }
+    .text span:not(:last-child) {
+        margin-left: 3px;
+    }
+
+    .user{
+        padding-right: 10px;
+    }
+    .user img{
+        width: 50px;
+        height: 50px;
+    }
+    .hamb{
+        right: 14px;
+        top: 118px;
+ }
+}
